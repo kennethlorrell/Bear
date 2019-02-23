@@ -11,17 +11,16 @@
 
 <body>
     <header class="main-header">
-        <div class="wrapper--main-nav">
-            <nav class="main-nav">
-                <a class="main-nav__logo"></a>
-                <ul class="main-nav__list">
-                    <li><a class="main-nav__item" href="#">Каталог товаров</a></li>
-                    <li><a class="main-nav__item" href="#">Вязание на заказ</a></li>
-                    <li><a class="main-nav__item" href="#">Поиск по сайту</a></li>
-                    <li><a class="main-nav__item" href="#">Корзина: пока пуста</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="main-nav removed">
+            <button class="main-nav__toggle"></button>
+            <ul class="main-nav__list">
+                <li><a class="main-nav__logo" href="index.html"></a></li>
+                <li><a class="main-nav__item" href="#">Каталог товаров</a></li>
+                <li><a class="main-nav__item" href="form.html">Вязание на заказ</a></li>
+                <li><a class="main-nav__item main-nav__search" href="#">Поиск по сайту</a></li>
+                <li><a class="main-nav__item main-nav__cart" href="#">Корзина: пока пуста</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="catalog">
@@ -33,14 +32,14 @@
                     <img src="img/product-rabbit-mobile.png" alt="Зайчик-попрыгайчик">
                 </a>
                 <div class="wrapper--catalog__product-inner">
-                <div class="inner-wrapper">
-                    <a class="product__header" href="#">Зайчик-попрыгайчик</a>
-                    <p class="product__desc">Рост 30 см, вес 200 г</p>
-                    <div class="product-buy">
-                        <span class="product-buy__price">1200 руб.</span>
-                        <button class="product-buy__add-to-cart"></button>
+                    <div class="inner-wrapper">
+                        <a class="product__header" href="#">Зайчик-попрыгайчик</a>
+                        <p class="product__desc">Рост 30 см, вес 200 г</p>
+                        <div class="product-buy">
+                            <span class="product-buy__price">1200 руб.</span>
+                            <button class="product-buy__add-to-cart"></button>
+                        </div>
                     </div>
-                </div>
                 </div>
             </article>
             <article class="product wrapper--catalog__product">
@@ -48,13 +47,13 @@
                     <img src="img/product-basket-mobile.png" alt="Корзинка для белья">
                 </a>
                 <div class="wrapper--catalog__product-inner">
-                <div class="inner-wrapper">
-                    <a class="product__header" href="#">Корзинка для белья</a>
-                    <p class="product__desc">Диаметр 15 см, высота 10 см</p>
-                    <div class="product-buy">
-                        <span class="product-buy__price">690 руб.</span>
-                        <button class="product-buy__add-to-cart"></button>
-                    </div>
+                    <div class="inner-wrapper">
+                        <a class="product__header" href="#">Корзинка для белья</a>
+                        <p class="product__desc">Диаметр 15 см, высота 10 см</p>
+                        <div class="product-buy">
+                            <span class="product-buy__price">690 руб.</span>
+                            <button class="product-buy__add-to-cart"></button>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -63,13 +62,13 @@
                     <img src="img/product-toybasket-mobile.png" alt="Большая корзинка для игрушек">
                 </a>
                 <div class="wrapper--catalog__product-inner">
-                <div class="inner-wrapper">
-                    <a class="product__header" href="#">Большая корзинка <br> для игрушек</a>
-                    <p class="product__desc">Диаметр 30 см, высота 30 см</p>
-                    <div class="product-buy">
+                    <div class="inner-wrapper">
+                        <a class="product__header" href="#">Большая корзинка <br> для игрушек</a>
+                        <p class="product__desc">Диаметр 30 см, высота 30 см</p>
+                        <div class="product-buy">
                             <span class="product-buy__price">1500 руб.</span>
                             <button class="product-buy__add-to-cart"></button>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </article>
@@ -82,12 +81,12 @@
                     <button class="video-about__play"></button>
                 </div>
                 <div class="inner-wrapper video-desc-container">
-                <p class="video-about__desc">
-                    По просьбам наших <br>любимых фолловеров мы <br>сняли для вас подробное <br>видео о том,
-                    как появляются<br> наши товары.
-                </p>
-                <button class="button">Сделать заказ</button>
-            </div>
+                    <p class="video-about__desc">
+                        По просьбам наших <br>любимых фолловеров мы <br>сняли для вас подробное <br>видео о том,
+                        как появляются<br> наши товары.
+                    </p>
+                    <button class="button">Сделать заказ</button>
+                </div>
             </article>
         </section>
     </main>
