@@ -1745,7 +1745,7 @@ textarea {
     font-size: 15px;
   }
   .main-nav__list > li:nth-child(2)::after {
-    content: "Распродажа";
+    content: "Новые поступления";
     position: absolute;
     top: 120px;
     left: 100px;
@@ -1846,6 +1846,7 @@ textarea {
     margin-top: 130px;
     margin-bottom: 5px;
     text-align: start;
+    width: auto;
   }
   .head-product__tag {
     width: 75px;
@@ -2088,23 +2089,23 @@ textarea {
   .main-footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     height: 143px;
+    position: relative;
   }
   .social-container {
     border: none;
     align-self: center;
     padding: 0;
-    margin-left: auto;
+    margin: 0;
   }
   .social-list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
     width: 141px;
-    position: relative;
+    position: static;
+    margin-left: 402px;
   }
   .social-list::before {
     content: "";
@@ -2112,8 +2113,8 @@ textarea {
     width: 102px;
     height: 34px;
     position: absolute;
-    left: -200px;
-    top: 15px;
+    left: 100px;
+    top: 48px;
   }
   .social-list a {
     display: inline-block;
@@ -2151,7 +2152,7 @@ textarea {
   .academy-container {
     display: flex;
     align-items: flex-end;
-    padding-left: 45px;
+    padding-right: 60px;
     height: 80px;
   }
   .academy-link {
