@@ -27,9 +27,14 @@
             <div class="wrapper--catalog__desc">
                 <h1 class="catalog__desc">Каталог товаров</h1>
             </div>
+            <div class="desktop-wrapper-articles">
             <article class="product wrapper--catalog__product">
                 <a class="product__image" href="#">
-                    <img src="img/product-rabbit-mobile.png" alt="Зайчик-попрыгайчик">
+                    <picture>
+                        <source media="(min-width:1050px)" srcset="img/product-rabbit-desktop.png">
+                        <source media="(min-width:766px)" srcset="img/product-rabbit-tablet.png">
+                        <img src="img/product-rabbit-mobile.png" alt="Зайчик-попрыгайчик">
+                    </picture>
                 </a>
                 <div class="wrapper--catalog__product-inner">
                     <div class="inner-wrapper">
@@ -44,7 +49,11 @@
             </article>
             <article class="product wrapper--catalog__product">
                 <a class="product__image" href="#">
-                    <img src="img/product-basket-mobile.png" alt="Корзинка для белья">
+                    <picture>
+                        <source media="(min-width:1050px)" srcset="img/product-basket-desktop.png">
+                        <source media="(min-width:766px)" srcset="img/product-basket-tablet.png">
+                        <img src="img/product-basket-mobile.png" alt="Корзинка для белья">
+                    </picture>
                 </a>
                 <div class="wrapper--catalog__product-inner">
                     <div class="inner-wrapper">
@@ -59,7 +68,11 @@
             </article>
             <article class="product wrapper--catalog__product">
                 <a class="product__image" href="#">
-                    <img src="img/product-toybasket-mobile.png" alt="Большая корзинка для игрушек">
+                    <picture>
+                        <source media="(min-width:1050px)" srcset="img/product-toybasket-desktop.png">
+                        <source media="(min-width:766px)" srcset="img/product-toybasket-tablet.png">
+                        <img src="img/product-toybasket-mobile.png" alt="Большая корзинка для игрушек">
+                    </picture>
                 </a>
                 <div class="wrapper--catalog__product-inner">
                     <div class="inner-wrapper">
@@ -72,12 +85,18 @@
                     </div>
                 </div>
             </article>
+            
+        </div>
             <article class="video-about wrapper--video-about">
                 <div class="inner-wrapper header-container">
                     <a class="video-about__header" href="">Процесс <br> производства</a>
                 </div>
                 <div class="video-container">
-                    <video poster="img/video-mobile.jpg" width=260px height=150px></video>
+                        <picture>
+                            <source media="(min-width:1050px)" srcset="img/video-desktop.jpg">
+                            <source media="(min-width:766px)" srcset="img/video-tablet.jpg">
+                            <img src="img/video-mobile.jpg" alt="Процесс производства">
+                        </picture>
                     <button class="video-about__play"></button>
                 </div>
                 <div class="inner-wrapper video-desc-container">
@@ -86,8 +105,8 @@
                         как появляются<br> наши товары.
                     </p>
                     <button class="button">Сделать заказ</button>
-                </div>
             </article>
+        </div>
         </section>
     </main>
     <footer class="main-footer wrapper--footer">
