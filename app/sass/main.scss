@@ -46,12 +46,34 @@ a {
         @include wrap(#63d1bb);
         padding: 30px;
         position: relative;
+        &:hover {
+            padding-bottom: 35px;
+        }
+        &:hover .useful-links__deco::after{
+            top: 17px;
+            filter: brightness(0.5);
+        }
+        &:active .useful-links__deco::after{
+            top: 17px;
+            filter: opacity(0.4);
+        }
     }
 
     &--toys {
         @include wrap(#56c3b2);
         padding: 30px;
         position: relative;
+        &:hover {
+            padding-bottom: 35px;
+        }
+        &:hover .useful-links__toys::after{
+            top: 17px;
+            filter: brightness(0.5);
+        }
+        &:active .useful-links__toys::after{
+            top: 17px;
+            filter: opacity(0.4);
+        }
     }
 
     &--head-product {
@@ -132,6 +154,19 @@ a {
     border: 2px solid #444444;
     padding: 18px 0;
     text-transform: uppercase;
+    
+
+    &:hover {
+        background-color: #444444;
+        color: #ffffff;
+        border-color: #444444;
+    }
+
+    &:active {
+        background-color: #444444;
+        color: #7c7c7c;
+        border-color: #444444;
+    }
 }
 
 .visually-hidden {
@@ -219,6 +254,22 @@ a {
     right: 30px;
     top: 30px;
     }
+}
+
+.main-nav__logo:hover {
+    filter: opacity(0.75);
+}
+
+.main-nav__logo:active {
+    filter: opacity(0.3);
+}
+
+.main-nav a:hover {
+    filter: opacity(0.75);
+}
+
+.main-nav a:active {
+    filter: opacity(0.3);
 }
 
 .removed {
@@ -499,6 +550,14 @@ a {
         width: 50%;
         height: 52px;
         border: 1px solid #ececec;
+
+        &:hover {
+            filter: opacity(0.8);
+        }
+
+        &:active {
+            filter: opacity(0.35);
+        }
     }
 
     &__next {
@@ -509,6 +568,14 @@ a {
         width: 50%;
         height: 52px;
         border: 1px solid #ececec;
+
+        &:hover {
+            filter: opacity(0.8);
+        }
+
+        &:active {
+            filter: opacity(0.35);
+        }
     }
 }
 
@@ -557,6 +624,14 @@ a {
 
     &__decorated {
         border-bottom: 1px solid #62d1ba;
+
+        &:hover {
+            color: #77d2c4;
+        }
+
+        &:active {
+            filter: opacity(0.3);
+        }
     }
 }
 
@@ -585,37 +660,48 @@ a {
         width: 25px;
         height: 28px;
     }
+
+    li:hover .social-list__icon,
+    li:focus .social-list__icon{
+        fill: red;
+        stroke: #8addcc;
+    }
+
+    li:active .social-list__icon {
+        stroke: #8addcc;
+        filter: opacity(0.4);
+    }
     
 
-    li:nth-child(1) a::before {
-        content: "";
-        background: url("../img/insta.png") no-repeat 0 0;
-        width: 22px;
-        height: 21px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
+    // li:nth-child(1) a::before {
+    //     content: "";
+    //     background: url("../img/insta.png") no-repeat 0 0;
+    //     width: 22px;
+    //     height: 21px;
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    // }
 
-    li:nth-child(2) a::before {
-        content: "";
-        background: url("../img/fb.png") no-repeat 0 0;
-        width: 15px;
-        height: 28px;
-        position: absolute;
-        top: -7px;
-        left: 5px;
-    }
+    // li:nth-child(2) a::before {
+    //     content: "";
+    //     background: url("../img/fb.png") no-repeat 0 0;
+    //     width: 15px;
+    //     height: 28px;
+    //     position: absolute;
+    //     top: -7px;
+    //     left: 5px;
+    // }
 
-    li:nth-child(3) a::before {
-        content: "";
-        background: url("../img/twitter.png") no-repeat 0 0;
-        width: 23px;
-        height: 20px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
+    // li:nth-child(3) a::before {
+    //     content: "";
+    //     background: url("../img/twitter.png") no-repeat 0 0;
+    //     width: 23px;
+    //     height: 20px;
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    // }
 }
 
 .academy-container {
@@ -632,6 +718,14 @@ a {
     font-weight: 700;
     text-decoration: none;
     position: relative;
+
+    &:hover {
+        filter: brightness(0.85);
+    }
+
+    &:active {
+        filter: opacity(0.4);
+    }
 
     &::after {
         content: "";
@@ -763,6 +857,16 @@ a {
         height: 77px;
         border: 0;
         z-index: 10;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &:focus {
+            transform: scale(0.8);
+            filter: opacity(0.6);
+        }
     }
 
     &__desc {
@@ -840,6 +944,8 @@ form label {
     position: relative;
 }
 
+
+
 .form__radio {
 
     margin-top: 32px;
@@ -847,6 +953,14 @@ form label {
 
     input[type="radio"] {
         display: none;
+        
+            
+        &:hover ~ label::before {
+            border-color: #62d1ba;
+        }
+        &:active ~ label::before {
+            border-color: #c7c7c7;
+        }
     }
 
     input:checked + label::before {
@@ -877,6 +991,13 @@ form label {
 
     input[type="checkbox"] {
         display: none;
+
+        &:hover ~ label::before {
+            border-color: #62d1ba;
+        }
+        &:active ~ label::before {
+            border-color: #c7c7c7;
+        }
     }
 
     input:checked + label::before {
@@ -907,6 +1028,11 @@ input[type="tel"] {
     border: none;
     border-bottom: 2px solid #000000;
     padding: 15px 0;
+
+    &:hover,
+    &:active {
+        border-color: #62d1ba;
+    }
 }
 
 .form__input {
@@ -927,6 +1053,11 @@ textarea {
     width: 100%;
     border: 2px solid #444444;
     resize: none;
+
+    &:hover,
+    &:active {
+        border-color: #62d1ba;
+    }
 }
 
 
@@ -985,13 +1116,35 @@ textarea {
         &--decoration {
             @include wrap(#63d1bb);
             padding: 35px;
-            width: 50%
+            width: 50%;
+            &:hover {
+                padding-bottom: 40px;
+            }
+            &:hover .useful-links__deco::after{
+                top: 17px;
+                filter: brightness(0.5);
+            }
+            &:active .useful-links__deco::after{
+                top: 17px;
+                filter: opacity(0.4);
+            }
         }
     
         &--toys {
             @include wrap(#56c3b2);
             padding: 35px;
-            width: 50%
+            width: 50%;
+            &:hover {
+                padding-bottom: 40px;
+            }
+            &:hover .useful-links__toys::after{
+                top: 17px;
+                filter: brightness(0.5);
+            }
+            &:active .useful-links__toys::after{
+                top: 17px;
+                filter: opacity(0.4);
+            }
         }
     
         &--head-product {
@@ -1501,6 +1654,14 @@ textarea {
 
     &__decorated {
         border-bottom: 1px solid #62d1ba;
+
+        &:hover {
+            color: #77d2c4;
+        }
+
+        &:active {
+            filter: opacity(0.3);
+        }
     }
 }
 
@@ -1543,37 +1704,6 @@ textarea {
         position: relative;
         width: 25px;
         height: 28px;
-    }
-    
-
-    li:nth-child(1) a::before {
-        content: "";
-        background: url("../img/insta.png") no-repeat 0 0;
-        width: 22px;
-        height: 21px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-
-    li:nth-child(2) a::before {
-        content: "";
-        background: url("../img/fb.png") no-repeat 0 0;
-        width: 15px;
-        height: 28px;
-        position: absolute;
-        top: -7px;
-        left: 5px;
-    }
-
-    li:nth-child(3) a::before {
-        content: "";
-        background: url("../img/twitter.png") no-repeat 0 0;
-        width: 23px;
-        height: 20px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
     }
 }
 
@@ -2083,11 +2213,33 @@ textarea {
             padding: 35px;
             width: 50%
         }
+        &:hover {
+            padding-bottom: 40px;
+        }
+        &:hover .useful-links__deco::after{
+            top: 17px;
+            filter: brightness(0.5);
+        }
+        &:active .useful-links__deco::after{
+            top: 17px;
+            filter: opacity(0.4);
+        }
     
         &--toys {
             @include wrap(#56c3b2);
             padding: 35px;
             width: 50%
+        }
+        &:hover {
+            padding-bottom: 40px;
+        }
+        &:hover .useful-links__toys::after{
+            top: 17px;
+            filter: brightness(0.5);
+        }
+        &:active .useful-links__toys::after{
+            top: 17px;
+            filter: opacity(0.4);
         }
     
         &--head-product {
@@ -2590,6 +2742,14 @@ textarea {
 
     &__decorated {
         border-bottom: 1px solid #62d1ba;
+
+        &:hover {
+            color: #77d2c4;
+        }
+
+        &:active {
+            filter: opacity(0.3);
+        }
     }
 }
 
@@ -2632,37 +2792,6 @@ textarea {
         position: relative;
         width: 25px;
         height: 28px;
-    }
-    
-
-    li:nth-child(1) a::before {
-        content: "";
-        background: url("../img/insta.png") no-repeat 0 0;
-        width: 22px;
-        height: 21px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    }
-
-    li:nth-child(2) a::before {
-        content: "";
-        background: url("../img/fb.png") no-repeat 0 0;
-        width: 15px;
-        height: 28px;
-        position: absolute;
-        top: -7px;
-        left: 5px;
-    }
-
-    li:nth-child(3) a::before {
-        content: "";
-        background: url("../img/twitter.png") no-repeat 0 0;
-        width: 23px;
-        height: 20px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
     }
 }
 
